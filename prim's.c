@@ -30,8 +30,7 @@ int printMST(int parent[], int graph[V][V])
 {
     printf("Edge \tWeight\n");
     for (int i = 1; i < V; i++)
-        printf("%d - %d \t%d \n", parent[i], i,
-               graph[parent[i]][i]);
+        printf("%d - %d \t%d \n", parent[i], i,graph[parent[i]][i]);
 }
 
 // Function to construct and print MST for
