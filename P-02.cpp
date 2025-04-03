@@ -3,19 +3,12 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int i=0;
-    int a[]={12,13,14,20,30,40};
-    while(i<6){
-        printf("%d\t",*(a+i));
-        printf("@ %u\t\t",(a+i));
-        i++;
-    }printf("\n");
-    i=0;
-    while(i<6) {
-        printf("%d\t",*(a+5-i));
-        printf("@ %u\t\t",(a+5-i));
-
-        i++;
+    int arr[2][5]={{1,2,3,4,5},{6,7,8,9,10}};
+    int r=5,c=2;
+    for(int i=0;i<c;i++){
+        for(int j=0;j<r;j++){
+            printf("%d\t",*(*(arr+i)+j));
+        }
+        printf("\n");
     }
-    return 0;
 }
