@@ -12,7 +12,7 @@ int main() {
         }
         printf("\n");
     }
-    
+    printf("In reverse : \n");
     for(int i=c-1;i>=0;i--){
         for(int j=r-1;j>=0;j--){
             printf("%d\t",*(*(arr+i)+j));
