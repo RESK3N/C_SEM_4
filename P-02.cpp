@@ -12,4 +12,12 @@ int main() {
         }
         printf("\n");
     }
+    
+    for(int i=c-1;i>=0;i--){
+        for(int j=r-1;j>=0;j--){
+            printf("%d\t",*(*(arr+i)+j));
+            printf("@ %u ,\t",*(arr+i+j));
+        }
+        printf("\n");
+    }
 }
