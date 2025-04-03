@@ -52,7 +52,7 @@ void print(int arr[],int n){
 }
 
 int main(){
-    int n=6;
+    int n;
     printf("Enter Length of array : ");
     scanf("%d",&n);
     int arr[n] ;
