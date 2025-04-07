@@ -15,7 +15,7 @@ void sort(int arr[], int n){
 int main(){
     int arr[]={5,4,10,1,2,6};
     int len=sizeof(arr)/sizeof(arr[0]);
-    
+    printf("Before Sorting :\n");   
     for(int i=0;i<len;i++)
         printf("%d\t",arr[i]);
     sort(arr,len);
