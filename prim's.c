@@ -19,5 +19,9 @@ void prims(int graph[size][size],int start){
     int parent[size];
 
     //initializing array
-    
+    for(int i=0;i<size;i++){
+        distance[i]=infinity;
+        visited[i]=0;
+        
+    }
 }
