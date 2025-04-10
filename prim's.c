@@ -28,11 +28,11 @@ void prims(int graph[size][size],int start){
     //updating values
     for(int i=0;i<size-1;i++){
         int u=find(distance,visited);
-        visited[i]=1;
+        visited[u]=1;
 
         for(int v=0;v<size;v++){
-            if(!visited[i] &&
-            graph[u][v]!=0 &&
+            if(!visited[v] &&
+            graph[u][v] &&
             graph[u][v]<distance[v]){
                 distance[v]=graph[u][v];
                 parent[v]=u;
