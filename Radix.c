@@ -27,13 +27,16 @@ int getmax(int arr[],int n){
     }
     return digit;
 }
-void radixsort(){
-
+void radixsort(int arr[],int n){
+    int max=getmax(arr,n);
+    for(int i=1;i<=max;i*=10){
+        InsertionSort(arr,n,i);
+    }
 }
 int main(){
     int arr[6]={50,30,40,200,10,6};
-    getmax(arr,6);
-//    for (int i = 0; i < 6; i++){
-//        printf("%d\t",arr[i]);
-//    }
+    radixsort(arr,6);
+    for (int i = 0; i < 6; i++){
+        printf("%d\t",arr[i]);
+    }
 }
