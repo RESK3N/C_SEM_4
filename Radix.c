@@ -15,17 +15,17 @@ void InsertionSort(int arr[],int n,int exp){
     }
 }
 int getmax(int arr[],int n){
-    int max=9999999,digit=0;
+    int max=0,digit=0;
     for(int i=0;i<n;i++){
-        if(arr[i]<max){
+        if(arr[i]>max){
             max=arr[i];
         }
     }
-    while(max!=0){
+    while(max>0){
         max=max/10;
         digit++;
     }
-    printf("%d",digit);
+    return digit;
 }
 void radixsort(){
 
