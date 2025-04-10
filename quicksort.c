@@ -37,7 +37,7 @@ int main(){
     printf("Before Sorting :\n");
     for(int i=0;i<len;i++)
         printf("%d\t",arr[i]);
-    sort(arr,0,len);
+    sort(arr,0,len-1);
     printf("\nAfter Sorting :\n");
     for(int i=0;i<len;i++)
         printf("%d\t",arr[i]);
