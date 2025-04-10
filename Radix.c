@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+#define size 6
 int digit(int num,int exp){
     return (num/exp)%10;
 }
@@ -29,14 +31,14 @@ int getmax(int arr[],int n){
 }
 void radixsort(int arr[],int n){
     int max=getmax(arr,n);
-    for(int i=1;i<=max;i*=10){
+    for(int i=1;i<=pow(10,max);i*=10){
         InsertionSort(arr,n,i);
     }
 }
 int main(){
-    int arr[6]={50,30,40,200,10,6};
-    radixsort(arr,6);
-    for (int i = 0; i < 6; i++){
+    int arr[size]={50,30,40,200,10,6};
+    radixsort(arr,size);
+    for (int i = 0; i < size; i++){
         printf("%d\t",arr[i]);
     }
 }
