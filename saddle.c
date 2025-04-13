@@ -20,6 +20,7 @@ void findSaddlePoint(int mat[ROW][COL]) {
                 colIndex = j;
             }
         }
+        
 
         // Check if it's the maximum in its column
         int k;
