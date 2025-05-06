@@ -13,16 +13,18 @@ void merge(int arr[],int left,int mid,int right){
         rarr[j]=arr[mid+1+j];
     }
     i=0,j=0,k=left;
+    //sorting by putting back elements from sub arrays to main array
     while(i<l1 && j<l2){
-        if(larr[i]<=rarr[j]){
-            arr[k]=larr[i];
-            i++;
+        if(larr[i]<=rarr[j]){// if left array is smaller
+            arr[k]=larr[i]; //put left array element
+            i++;// left index to next element
         }else{
             arr[k]=rarr[j];
             j++;
         }
-        k++;
+        k++;// main array index to next position
     }
+    //putting any leftover elements
     while(i<l1){
         arr[k]=larr[i];
         i++;
