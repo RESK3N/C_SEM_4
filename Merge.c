@@ -3,8 +3,9 @@ void merge(int arr[],int left,int mid,int right){
     int i,j,k;
     int l1,l2;
     l1=mid-left+1;//length of left subarray
-    l2=right-mid;
+    l2=right-mid;//length of right subarray
     int larr[l1],rarr[l2];
+    //dividing arr into left array larr and right array rarr
     for(i=0;i<l1;i++){
         larr[i]=arr[left+i];
     }
