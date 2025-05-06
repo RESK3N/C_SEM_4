@@ -32,7 +32,7 @@ void sort(int arr[],int lb,int ub){
     }
 }
 int main(){
-    int arr[]={5,4,10,33,1,2,6,22,3,7};
+    int arr[]={5,4,10,33,1,2,6,22,3,7,8};
     int len=sizeof(arr)/sizeof(arr[0]);
     printf("Before Sorting :\n");
     for(int i=0;i<len;i++)

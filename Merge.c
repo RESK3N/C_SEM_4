@@ -2,7 +2,7 @@
 void merge(int arr[],int left,int mid,int right){
     int i,j,k;
     int l1,l2;
-    l1=mid-left+1;
+    l1=mid-left+1;//length of left subarray
     l2=right-mid;
     int larr[l1],rarr[l2];
     for(i=0;i<l1;i++){
